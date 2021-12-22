@@ -2,6 +2,9 @@
 # having the following bounding coordinates
 
 # %%
+import numpy as np
+
+# %%
 # target area: x=137..171, y=-98..-73
 x1, x2 = (137, 171)  # inclusive
 y1, y2 = (-98, -73)
