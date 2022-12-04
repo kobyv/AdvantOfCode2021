@@ -24,12 +24,11 @@ with open("input.txt") as f:
         r1_start, r1_end = [int(x) for x in r1.split("-")]
         r2_start, r2_end = [int(x) for x in r2.split("-")]
 
-        if (r1_start <= r2_start <= r1_end) or (
-            r1_start <= r2_end <= r1_end
-        ) or (
-            r2_start <= r1_start <= r2_end
-        ) or (
-            r2_start <= r1_end <= r2_end
+        if (
+            (r1_start <= r2_start <= r1_end)
+            or (r1_start <= r2_end <= r1_end)
+            or (r2_start <= r1_start <= r2_end)
+            or (r2_start <= r1_end <= r2_end)
         ):
             num_subsets += 1
 print(num_subsets)
